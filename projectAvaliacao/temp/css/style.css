@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* MENU PRINCIPAL*/
+.menu-principal{
+    background-color: #C4C4C4;
+    margin-bottom: 80px;
+    border-bottom: 1px solid #000000;
+}
+.logo{
+    float: left;
+    margin: 10px;
+    margin-right: 700px;
+}
+.logo a{
+   text-decoration: none; 
+   color: black;
+}
+
+.menu-principal ul{
+    list-style: none;
+}
+
+.menu-principal ul li{
+    display: inline;
+
+}
+.menu-principal ul li a{
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    margin-right: 0;
+}
+.menu-principal ul li a:hover{
+    color: rgb(85, 85, 85) ;
+}
+/*FIM MENU PRINCIPAL*/
+
+/*INICIO LOGIN E CADASTRO*/
+
+.login{
+    background-color: #C4C4C4;
+    width: 369px;
+    height: 390px;
+    float: left;
+    margin-left: 114px;
+    margin-top: 29px;
+    border-radius: 2px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+.texto_login, .texto_cadastro{
+    text-align: center;
+    margin-top: 30px;
+}
+.form_login{
+    padding: 50px;
+    padding-top: 50px;
+}
+
+
+.form_cadastro{
+    padding: 50px;
+    padding-top: 40px;
+}
+
+
+
+.texto_separação{
+   display: inline-flex;
+   margin-left: 160px;
+   margin-top: 160px;
+   font-weight: 900;
+}
+.cadastro{
+    background-color: #C4C4C4;
+    width: 369px;
+    height: 390px;
+    float: right;
+    margin-right: 132px;
+    margin-top: 29px;
+    border-radius: 2px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+label{
+    padding-bottom: 50px;
+}
+input[type="text"], input[type="password"], input[type="email"], select{
+    width: 280px;
+    margin-bottom: 15px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, select:focus {
+    outline: none;
+}
+
+.botao1, .botao2{
+    width: 123px;
+    height: 33px;
+    margin-top: 30px;
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+    background: #002b63;    
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    color: white;
+}
+.cidade{
+    margin-bottom: 15px;
+}
+.botao1:hover, .botao2:hover{
+    background: #1a1dca;
+}

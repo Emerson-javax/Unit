@@ -1,0 +1,74 @@
+.body2{
+    background-color: rgb(0, 0, 0);
+ }
+.titulo{
+    text-align: center;
+    margin-top: -60px;
+}
+
+.burg1{
+    width: 150px;
+    height: 150px;
+    background-image: url("img/food-photographer-david-fedulov-E94j3rMcxlw-unsplash.jpg");
+    background-size: cover;
+    display: inline-block;
+    margin-left: 250px;
+    border-radius: 8px;
+}
+.burg{
+    width: 150px;
+    height: 150px;
+    background-image: url("img/food-photographer-david-fedulov-E94j3rMcxlw-unsplash.jpg");
+    background-size: cover;
+    display: inline-block;
+    margin-left: 70px;
+    border-radius: 8px;
+}
+
+.burg p, .burg1 p{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}
+
+.pedidos{
+    color: black;
+    height: 40vh;
+    margin-top: 120px;
+    padding: 20px;
+    display: block;
+    background-color: #c4c4c4;
+}
+
+.pedidos h2{
+   display: inline-flex;
+
+}
+.pedidos h3{
+    display: inline-flex;
+    position: relative;
+    left: 1100px;
+    top: -30px;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.promo1, .promo2{
+    width: 1100px;
+    height: 20px;
+    padding: 15px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+input[type="button"]{
+    width: 50px;
+    height: 50px;
+}

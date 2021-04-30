@@ -1,0 +1,102 @@
+body{
+    background-image: url("img/background-food.jpg");
+    background-size: cover;
+}
+.carrinho_texto{
+    margin-left: 25px ;
+    margin-top: -50px;
+}
+
+.container_itens{
+    background-color: #c4c4c4;
+    width: 1300px;
+    height: 220px;
+    margin-left: 25px;
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+.itens h2{
+    display: inline-flex;
+}
+
+.preco1{
+    display: block;
+   margin-left: 1100px;
+   margin-top: -10px;
+   font-size: 25px;
+}
+
+.container_total{
+    background-color: rgb(0, 0, 0);
+    display: inline-flex;
+    width: 1320px;
+    margin-left: -10px;
+    margin-top: 100px;
+    height: 70px;
+}
+.total{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+}
+.preco2{
+    margin-top: 10px;
+    margin-left: 900px;
+    color: white;
+    font-size: 35px
+}
+
+.comprar{
+    width: 1320px;
+    margin-left: 20px;
+    background-color: #c4c4c4;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #000000;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.comprar h3{
+  padding-top: 5px;
+}
+.comprar a{
+    text-decoration: none;
+    color: black;
+}
+
+.fechar{
+    width: 1320px;
+    margin-left: 20px;
+    background-color: #0fac4b;
+    height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid #000000;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.fechar h3{
+  padding-top: 5px;
+  color: white;
+}
+.fechar a{
+    text-decoration: none;
+}
+
+.voltar{
+    background-color: #000000;
+    margin-top: 90px;
+    height: 10vh;
+}
+
+.voltar2{
+    padding: 20px;
+    width: 200px;
+    margin: 10px;
+}
+.voltar2 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'normalize/normalize.css' %}">
+</head>
+<body class="body1">
+    <header>
+        <div class="menu-principal"> <!-- INICIO MENU PRINCIPAL -->
+            <div class="logo">
+                <a href="index"><h2>LOGO</h2></a>
+            </div>
+            <ul>
+                <li><a href="index">HOME</a></li>
+                <li><a href="cardapio">CARDAPIO</a></li>
+                <li><a href="login">LOGIN</a></li>
+                <li><a href="carrinho">CARRINHO</a></li>
+            </ul>
+        </div> <!-- FIM MENU PRINCIPAL -->
+    </header>
+    <main>
+        <div class="login"> <!-- INICIO LOGIN-->
+            <div class="texto_login"><h2>LOGIN</h2></div>
+            <form method="POST" class="form_login" action="login">
+                {% csrf_token %}
+                <label for="usuario">Usuário:</label> <br>
+                <input id="usuario" name="usuario" type="text" > <br>
+                <label for="senha">Senha:</label> <br>
+                <input id="senha" name="senha" type="password"><br>
+                <input class="botao1" type="submit" value="Entrar">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

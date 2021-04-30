@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'normalize/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cardapio.css' %}">
+</head>
+<body class="body2">
+    <header>
+        <div class="menu-principal"> <!-- INICIO MENU PRINCIPAL -->
+            <div class="logo">
+                <a href="index"><h2>LOGO</h2></a>
+            </div>
+            <ul>
+                <li><a href="index">HOME</a></li>
+                <li><a href="cardapio">CARDAPIO</a></li>
+                <li><a href="login">LOGIN</a></li>
+                <li><a href="carrinho">CARRINHO</a></li>
+            </ul>
+        </div> <!-- FIM MENU PRINCIPAL -->
+    </header>
+    <main>
+        <div class="cardapio">
+            <div class="titulo">
+                <h1>Cardápio</h1>
+            </div>
+            <div class="burg1">
+                <div><a href=""><p>X-BACON</p></a></div>
+            </div>
+
+            <div class="burg">
+                <div><a href=""><p>X-BURGUER</p></a></div>
+            </div>
+            <div class="burg">
+                <div><a href=""><p>X-CALABRESA</p></a></div>
+            </div>
+            <div class="burg">
+                <div><a href=""><p>X-CALABRESA</p></a></div>
+            </div>
+        </div> <!--FIM CARDAPIO-->
+
+        <div class="pedidos">
+            <h2>Promoções</h2>
+            <div>
+                <a href="carrinho"><h3>Carrinho<img src="./css/img/cart.png" alt="" width="20px"></h3></a>
+            </div>
+            <div class="promo1">
+                <p>PROMO 1:--------------  2 X-BACON por apenas R$15,00</p>
+                 
+            </div>
+            <input type="button" value="+">
+
+
+            <div class="promo2">
+                <p>PROMO 2:-------------- 2 X-PICANHA por apenas R$18,00</p>
+            </div>
+            <input type="button" value="+">
+            <div class="promo2">
+                <p>PROMO 3:--------------  2 X-CALABRESA por apenas R$16,00</p>
+            </div>
+            <input type="button" value="+">
+        </div>
+       
+        
+    </main>
+    
+</body>
+</html>

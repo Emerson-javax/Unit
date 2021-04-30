@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'normalize/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/carrinho.css' %}">
+</head>
+<body>
+    <header>
+        <div class="menu-principal"> <!-- INICIO MENU PRINCIPAL -->
+            <div class="logo">
+                <a href="index"><h2>LOGO</h2></a>
+            </div>
+            <ul>
+                <li><a href="index">HOME</a></li>
+                <li><a href="cardapio">CARDAPIO</a></li>
+                <li><a href="login">LOGIN</a></li>
+                <li><a href="carrinho">CARRINHO</a></li>
+            </ul>
+        </div> <!-- FIM MENU PRINCIPAL -->
+    </header>
+    <main>
+        <h1 class="carrinho_texto" >Carrinho</h1>
+
+        <div class="container_itens">
+            <div class="itens">
+                <h2>ITENS</h2>
+                <div class="preco1">
+                    <p>R$ 18,00</p>
+                </div>
+                <div class="promocao">
+                    <h3>PROMOÇÃO 1</h3>
+                    <p>2 X-BACON</p>
+                </div>
+
+                <div class="container_total">
+                    <h3 class="total" >TOTAL DO PEDIDO:</h3>
+                    <div class="preco2">
+                        <p>R$ 18,00</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+       <div class="comprar">
+           <a href="cardapio.html"><h3>Comprar Mais</h3></a>
+       </div>
+
+       <div class="fechar">
+        <a href="fim.html"><h3>Fechar Pedido</h3></a>
+       </div>
+    </main>
+    <footer>
+        <div class="voltar">
+            <div class="voltar2">
+                <a href="cardapio.html"><h3>Voltar ao Cardápio</h3></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO RICARDO</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="normalize/normalize.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="menu-principal"> <!-- INICIO MENU PRINCIPAL -->
+            <div class="logo">
+                <a href="index.html"><h2>LOGO</h2></a>
+            </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html">CARDAPIO</a></li>
+                <li><a href="index.html">CONTATO</a></li>
+                <li><a href="index.html">SOBRE NÓS</a></li>
+            </ul>
+        </div> <!-- FIM MENU PRINCIPAL -->
+    </header>
+    <main>
+        <div class="login"> <!-- INICIO LOGIN-->
+            <div class="texto_login"><h2>LOGIN</h2></div>
+            <form class="form_login" action="#">
+                <label for="usuario">Usuário:</label> <br>
+                <input id="usuario" type="text" > <br>
+                <label for="senha">Senha:</label> <br>
+                <input id="senha" type="password"><br>
+                <input class="botao1" type="submit" value="Entrar">
+            </form>
+        </div>
+        <div class="texto_separação"> <h1>OU</h1></div> <!-- TEXTO DE SEPARAÇÃO -->
+        <div class="cadastro">
+            <div class="texto_cadastro"><h2>CADASTRO</h2></div>
+            <form method="POST" class="form_cadastro" action="cadastro">
+                {% csrf_token %}
+                <label for="email">Email:</label><br/>
+                <input id="email" name="email" type="text"><br/>
+                <label for="nome">Nome:</label><br/>
+                <input id="nome" name="nome" type="text"><br/>
+                <label for="cpf">CPF:</label><br/>
+                <input id="cpf" name="cpf" type="text"><br/>
+                <label for="cidade">Cidade:</label><br/>
+                <input id="cidade" name="cidade" type="text">
+                <br/>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
